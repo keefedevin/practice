@@ -1,0 +1,12 @@
+Zero To Development, Windows 10
+
+1) download JDK14 from Oracle, remember to add bin directory to path
+	https://docs.oracle.com/en/java/javase/14/install/installation-jdk-microsoft-windows-platforms.html
+2) download eclipse from eclipse.org
+3) create a new java project and print a hello world to verify setup is good
+4) install git and ssh client
+	https://git-scm.com/download/win
+	I prefer to set it to checkout as is and commit in UNIX style line endings
+5) create and add an ssh key for github
+	https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
+6) clone a project and commit  file
