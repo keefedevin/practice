@@ -10,3 +10,13 @@ Zero To Development, Windows 10
 5) create and add an ssh key for github
 	https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
 6) clone a project and commit  file
+7) fork the various categorizeus projects and clone locally
+	git clone git@github.com:keefedevin/categorizeus.core.git
+git clone git@github.com:keefedevin/categorizeus.naive.git
+git clone git@github.com:keefedevin/categorizeus.naive.users.git
+git clone git@github.com:keefedevin/categorizeus.naive.app.git
+git clone git@github.com:keefedevin/categorizeus.naive.accession.git (optional)
+8) install postgres, using 12.2 installer locally
+9) https://maven.apache.org/download.cgi
+install maven, remember to add it to path
+10) import the various maven projects into eclipse as maven projects, rather than running eclipse:eclipse from command line, this avoids manual dependency issues
