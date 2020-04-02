@@ -24,3 +24,15 @@ install maven, remember to add it to path
   create database categories;
   create user categorizeus with password 'password';
   grant all privileges on database categories to categorizeus;
+12) create ~/projects/files directory and ~/projects/secrets/secrets.properties and set
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_USER=categorizeus
+DB_PASS=35789fb6e
+DB_NAME=categories
+-- make sure this user can login with psql
+13) code should run but throw an exception due to lack of tables at this point
+14) under categorizeus.naive/src/main/resources/sql/postgres need to load schema and seed data
+if this is the first run, psql as the postgres user on the categories database and grant access to all tables to your newly created tables
+  GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO categorizeus;
+
