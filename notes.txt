@@ -35,4 +35,11 @@ DB_NAME=categories
 14) under categorizeus.naive/src/main/resources/sql/postgres need to load schema and seed data
 if this is the first run, psql as the postgres user on the categories database and grant access to all tables to your newly created tables
   GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO categorizeus;
+15) uncomment the section to create a local user so that writes can occur in NaiveApp.java, this bit
+
+		User user = new User();
+		user.setUsername("youruser");
+		user.setPasshash(NaiveUserStore.sha256hash(NaiveUserStore.sha256hash("yourpassword")));
+		CategorizeUs.instance().getUserStore().registerUser(user);
+		
 
