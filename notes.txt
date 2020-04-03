@@ -41,5 +41,8 @@ if this is the first run, psql as the postgres user on the categories database a
 		user.setUsername("youruser");
 		user.setPasshash(NaiveUserStore.sha256hash(NaiveUserStore.sha256hash("yourpassword")));
 		CategorizeUs.instance().getUserStore().registerUser(user);
-		
+16) 
+	setup google oauth credentials with http://localhost:8080/v1/auth/oauthcb as the callback for local
+	https://developers.google.com/identity/protocols/oauth2/web-server gives docs
+	
 
