@@ -44,5 +44,13 @@ if this is the first run, psql as the postgres user on the categories database a
 16) 
 	setup google oauth credentials with http://localhost:8080/v1/auth/oauthcb as the callback for local
 	https://developers.google.com/identity/protocols/oauth2/web-server gives docs
+	for localhost I just setup the public app and set the
+	GOOGLE_CLIENT_ID and SECRET properties in secrets.properties and it worked fine
 	
+	
+	stuff to do
+	
+	get accession running
+	fix dialog box
+	find some sample data
 
